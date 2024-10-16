@@ -25,11 +25,15 @@ Lora拓展版内置了SX1262 Lora模块、PCF85063 RTC模块和一个红外发�
 
 1. 安装 [VScode]((https://code.visualstudio.com/)) 和 [Python](https://www.python.org/)，并且克隆或下载此项目；
 2. 在 VScode 的扩展中搜索 PlatformIO 的插件，然后安装它；
-3. 在 PlatformIO 插件安装完成后，需要重新启动 VScode，然后用 VScode 打开此工程；
+3. 在 PlatformIO 插件安装完成后，需要重新启动 VScode，<font color="red">然后用 VScode 打开`LilyGO-Mini-Epaper\examples\Extension\Meshtastic`文件夹；</font>
+<img src="/images/1.png"></img>
+<img src="/images/2.png"></img>
 4. 打开此工程后，PlatformIO 会自动的下载需要的三方库和依赖，第一次这个过程比较长，情耐心等待；
 5. 当所有的依赖安装后，可以打开 `platformio.ini` 配置文件，并取消`default_envs = mini_e-paper`注释,将其他`default_envs = xxx`注释上，选择后按下 `ctrl+s` 保存 .ini 配置文件；
 6. 点击 VScode 下面的 :ballot_box_with_check: 编译工程，按住`BOOT_BUTTON`按键然后插上 USB 在 VScode 下面选择 COM 口；
 7. 最后点击 :arrow_right: 按键将程序下载到 Flash 中；
+
+
 
 ## :six: 引脚总览
 |   BUTTON      | ESP32S3引脚 |
@@ -66,8 +70,8 @@ Lora拓展版内置了SX1262 Lora模块、PCF85063 RTC模块和一个红外发�
 
 # 固件烧录
 打开`tools`文件夹，解压并安装`flash_download_tool_3.9.3`烧录软件，打开`flash_download_tool_3.9.3.exe`,按照如图所示对`Mini-E-Paper-S3`进行软件烧录。<font color="red"> 烧录对应的文件在本目录下的`firmware`文件夹。<font>
-<img src="/firmware/disposition.png" alt="Stanford-Alpaca" style="width: 30%; min-width: 100px; display: block; margin: auto;">
-<img src="/firmware/burn.png" alt="Stanford-Alpaca" style="width: 70%; min-width: 100px; display: block; margin: auto;">
+<img src="/images/disposition.png" alt="disposition" style="width: 30%; min-width: 100px; display: block; margin: auto;">
+<img src="/images/burn.png" alt="burn" style="width: 70%; min-width: 100px; display: block; margin: auto;">
 
 # Meshtastic Firmware
 

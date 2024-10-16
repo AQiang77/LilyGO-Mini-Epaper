@@ -26,7 +26,9 @@ The extended version of Lora includes an `SX1262` Lora module, a `PCF85063` RTC 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) and [Python](https://www.python.org/), and clone or download the project;
 2. Search for the `PlatformIO` plugin in the `VisualStudioCode` extension and install it;
 3. After the installation is complete, you need to restart `VisualStudioCode`
-4. After opening this project, PlatformIO will automatically download the required tripartite libraries and dependencies, the first time this process is relatively long, please wait patiently;
+4. <font color="red">Then open the `LilyGO-Mini-Epaper\examples\Extension\Meshtastic` folder with VScode</font>, PlatformIO will automatically download the required tripartite libraries and dependencies, the first time this process is relatively long, please wait patiently;
+<img src="/images/1.png"></img>
+<img src="/images/2.png"></img>
 5. When all the dependencies are installed, you can open the `platformio.ini` configuration file and uncomment `default_envs = mini_e-paper` and comment the other `default_envs = xxx`. Select and press ctrl+s to save the.ini configuration file;
 6. Click :ballot_box_with_check: under VScode to compile the project, then plug in USB and select COM under VScode;
 7. Finally, click the :arrow_right:  button to download the program to Flash;
@@ -66,8 +68,8 @@ The extended version of Lora includes an `SX1262` Lora module, a `PCF85063` RTC 
 
 # Firmware burning
 Open the `tools` folder, unpack and install the `flash_download_tool_3.9.3` burning software, open `flash_download_Tool_3.9.exe` and burn `Mini-E-Paper-S3` as shown in the picture. <font color="red">Burn the corresponding files in this directory under the `firmware` folder.<font>
-<img src="/firmware/disposition.png" alt="Stanford-Alpaca" style="width: 30%; min-width: 100px; display: block; margin: auto;">
-<img src="/firmware/burn.png" alt="Stanford-Alpaca" style="width: 70%; min-width: 100px; display: block; margin: auto;">
+<img src="/images/disposition.png" alt="disposition" style="width: 30%; min-width: 100px; display: block; margin: auto;">
+<img src="/images/burn.png" alt="burn" style="width: 70%; min-width: 100px; display: block; margin: auto;">
 
 # Meshtastic Firmware
 
